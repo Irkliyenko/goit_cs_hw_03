@@ -5,7 +5,7 @@ from pymongo.server_api import ServerApi
 # Initialize the MongoDB connection.
 try:
     client = MongoClient(
-        "mongodb+srv://irklienko:Wrn1dfMMHplVjMLP@cluster1.jirjk8a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1", server_api=ServerApi('1'))
+        "mongodb+srv://<username>:<password>@", server_api=ServerApi('1'))
     db = client.book  # Specify your database name here.
 except errors.ConnectionFailure:
     print("Failed to connect to MongoDB. Check your connection string and server status.")

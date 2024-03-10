@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
 client = MongoClient(
-    "mongodb+srv://irklienko:Wrn1dfMMHplVjMLP@cluster1.jirjk8a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1",
+    "mongodb+srv://<username>:<password>@",
     server_api=ServerApi('1')
 )
 db = client.book
